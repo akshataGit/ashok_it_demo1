@@ -1,1 +1,2 @@
 hello this is aws txt file
+added new line on 18may23(9.27am) to check how git fetch works
