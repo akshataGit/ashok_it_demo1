@@ -1,0 +1,26 @@
+It looks like you are encountering dependency issues while trying to install Cucumber Eclipse, specifically related to the missing requirement 'org.eclipse.pde.ui 3.5.0' for 'cucumber.eclipse.editor 1.0.0.282107158747'.
+
+To resolve this issue, you can try the following steps:
+
+Update Eclipse:
+Ensure that you are using an updated version of Eclipse. Sometimes, updating Eclipse to the latest version can resolve dependency problems.
+
+Check Available Updates:
+Go to "Help" -> "Check for Updates" in Eclipse to make sure that you have the latest updates installed.
+
+Install Missing Dependencies:
+Try to install the missing dependency 'org.eclipse.pde.ui 3.5.0' manually. You can do this by going to "Help" -> "Eclipse Marketplace" -> "Installed" -> "Installed Software" and check if 'org.eclipse.pde.ui' is present. If not, try installing it from the Eclipse Marketplace or using the Eclipse update site.
+
+Install Cucumber Eclipse from Update Site:
+Instead of using the installation file, try installing Cucumber Eclipse directly from its update site. Go to "Help" -> "Eclipse Marketplace" -> "Go to the Eclipse Marketplace" and search for "Cucumber Eclipse". From there, you should be able to install it without encountering the missing requirement issue.
+
+Check Compatibility:
+Ensure that the version of Cucumber Eclipse you are trying to install is compatible with your Eclipse version. Sometimes, certain versions of plugins are designed to work with specific Eclipse versions.
+
+If the issue persists, you may want to check the Cucumber Eclipse documentation or community forums for any reported issues or solutions related to the specific version you are trying to install.
+
+
+
+
+
+
