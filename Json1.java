@@ -1,3 +1,55 @@
+
+import org.json.JSONObject;
+
+public class Main {
+    public static void main(String[] args) {
+        String jsonString = "{\"coffee\":{\"region\":[{\"id\":1,\"name\":\"John Doe\"},{\"id\":2,\"name\":\"Don Joeh\"}],\"country\":{\"id\":2,\"company\":\"ACME\"}},\"brewing\":{\"region\":[{\"id\":1,\"name\":\"John Doe\"},{\"id\":2,\"name\":\"Don Joeh\"}],\"country\":{\"id\":2,\"company\":\"ACME\"}}}";
+
+        JSONObject jsonObject = new JSONObject(jsonString);
+
+        // Find the "country" object with id 2 in "coffee" and "brewing"
+        JSONObject countryObject = jsonObject
+                .entrySet()
+                .stream()
+                .filter(entry -> entry.getKey().equals("coffee") || entry.getKey().equals("brewing"))
+                .map(entry -> ((JSONObject) entry.getValue()).getJSONObject("country"))
+                .filter(country -> country.getInt("id") == 2)
+                .findFirst()
+                .orElse(null);
+
+        if (countryObject != null) {
+            String company = countryObject.getString("company");
+            System.out.println("Company for id 2 in country: " + company);
+        } else {
+            System.out.println("Country with id 2 not found.");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================
 import org.json.JSONArray;
 import org.json.JSONObject;
 
