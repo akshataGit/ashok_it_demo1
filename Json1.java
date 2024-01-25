@@ -23,3 +23,12 @@ public class JsonParsingExample {
         }
     }
 }
+
+
+
+
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20210307</version> <!-- Or the latest version available -->
+</dependency>
